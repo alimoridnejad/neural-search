@@ -1,0 +1,8 @@
+# recommended packages for baseline search engine
+
+# pre-trained models
+open-clip-torch==2.20.0
+sentence-transformers==2.2.2
+
+# vespa application
+learntorank==0.0.21

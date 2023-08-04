@@ -1,0 +1,17 @@
+# default config for text to image retrieval
+
+model_name: "openai_clip"
+# choices: ["openai_clip", "laion_clip", "biomed_clip"]
+
+app_name: "text2image"
+# choices: ["text2image", "text2text", "image2image", "image2text"]
+
+search_type: "vector"
+# choices: ["keyword", "vector", "hybrid"]
+
+dataset: "flickr_english"
+# choices: ["flickr8k", "flickr_english", "flickr_french", "flickr_dutch", "roco", "coco"]
+
+metrics:
+  - "recall"
+# choices: ["recall", "reciprocal_rank", "ndcg", "match_ratio"]
