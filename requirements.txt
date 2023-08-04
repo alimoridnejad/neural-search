@@ -1,4 +1,4 @@
-# recommended packages for baseline search engine
+# recommended packages for neural search
 
 # pre-trained models
 open-clip-torch==2.20.0
