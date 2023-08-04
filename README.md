@@ -46,11 +46,11 @@ The Microsoft Common Objects in COntext (MS COCO) dataset contains human generat
 We use the test set which contains 5000 image-caption pairs (English only).
 
 
-**Note:** The repository assumes you have the datasets stored in a directory named `data/`. 
+**Note:** The repository assumes you have the datasets stored in a directory named `dataset/`. 
 Please make sure to download the datasets and organize them accordingly.
 
 ```.
-ir-search/baseline/data
+neural_search/dataset
 ├── roco_test
 │   ├── images
 │   │   ├── ROCO_00001.jpg
@@ -110,7 +110,7 @@ Other available metrics to select:
 
 To run the experiment, use the following command:
 ```
-python retrieval_evaluation.py --model_name openai_clip --dataset roco --metrics recall
+python retrieval_evaluation.py 
 ```
 You can switch the model and dataset as required. 
 
@@ -119,12 +119,6 @@ You can switch the model and dataset as required.
 python retrieval_evaluation.py \
     --device="cpu" \
     --seed=1 \
-    --model_name="open_ai" \
-    --app_name="text2image" \
-    --search_type="vector" \
-    --dataset="flickr_english" \
-    --metrics="recall" \
-    --preprocess=False \
     --save_results=False \
     --output_dir="./outputs/"
 ```
